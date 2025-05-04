@@ -2,21 +2,31 @@
 ## Folder Structure :
 
 ```go
-my-app/
+├── package.json
+├── .env
+├── .gitignore
 ├── src/
-│   ├── dto/
-│   │   └── user.dto.js    // Contains UserDTO class
-│   ├── services/
-│   │   └── user.service.js  // Contains registerUser function
-│   ├── repositories/
-│   │   └── user.repository.js  // Contains createUser, findUserByEmail
+│   ├── index.js
+│   ├── config/
+│   │   └── db.js
 │   ├── controllers/
-│   │   └── user.controller.js  // Contains the user controller
+│   │   └── user.controller.js
+│   ├── dto/
+│   │   └── user.dto.js
+│   ├── interfaces/
+│   │   └── user.interface.js
+│   ├── middlewares/
+│   │   └── error.middleware.js
 │   ├── models/
-│   │   └── user.model.js  // User model for MongoDB (Mongoose)
-│   └── ...
-└── package.json
-
+│   │   └── user.model.js
+│   ├── repositories/
+│   │   └── user.repository.js
+│   ├── routes/
+│   │   └── user.routes.js
+│   ├── services/
+│   │   └── user.service.js
+│   └── utils/
+│       └── logger.js
 ```
 
 1. First Command 
